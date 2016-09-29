@@ -13,6 +13,9 @@
 		EB01D73A1D9D5D6D00274AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB01D7391D9D5D6D00274AEA /* Assets.xcassets */; };
 		EB01D73D1D9D5D6D00274AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB01D73B1D9D5D6D00274AEA /* LaunchScreen.storyboard */; };
 		EB01D7451D9D665800274AEA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01D7441D9D665800274AEA /* CameraView.swift */; };
+		EB01D7471D9D833700274AEA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01D7461D9D833700274AEA /* PlayerView.swift */; };
+		EB01D7491D9D835A00274AEA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01D7481D9D835A00274AEA /* PlayerViewController.swift */; };
+		EB01D74C1D9D855900274AEA /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB01D74A1D9D855900274AEA /* Player.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EB01D73C1D9D5D6D00274AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB01D73E1D9D5D6D00274AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB01D7441D9D665800274AEA /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EB01D7461D9D833700274AEA /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		EB01D7481D9D835A00274AEA /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		EB01D74B1D9D855900274AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Player.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				EB01D7321D9D5D6D00274AEA /* AppDelegate.swift */,
 				EB01D7341D9D5D6D00274AEA /* ViewController.swift */,
 				EB01D7361D9D5D6D00274AEA /* Main.storyboard */,
+				EB01D74A1D9D855900274AEA /* Player.storyboard */,
 				EB01D7391D9D5D6D00274AEA /* Assets.xcassets */,
 				EB01D73B1D9D5D6D00274AEA /* LaunchScreen.storyboard */,
 				EB01D73E1D9D5D6D00274AEA /* Info.plist */,
 				EB01D7441D9D665800274AEA /* CameraView.swift */,
+				EB01D7461D9D833700274AEA /* PlayerView.swift */,
+				EB01D7481D9D835A00274AEA /* PlayerViewController.swift */,
 			);
 			path = CameraRecord;
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB01D73D1D9D5D6D00274AEA /* LaunchScreen.storyboard in Resources */,
+				EB01D74C1D9D855900274AEA /* Player.storyboard in Resources */,
 				EB01D73A1D9D5D6D00274AEA /* Assets.xcassets in Resources */,
 				EB01D7381D9D5D6D00274AEA /* Main.storyboard in Resources */,
 			);
@@ -143,6 +153,8 @@
 				EB01D7451D9D665800274AEA /* CameraView.swift in Sources */,
 				EB01D7351D9D5D6D00274AEA /* ViewController.swift in Sources */,
 				EB01D7331D9D5D6D00274AEA /* AppDelegate.swift in Sources */,
+				EB01D7471D9D833700274AEA /* PlayerView.swift in Sources */,
+				EB01D7491D9D835A00274AEA /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +175,14 @@
 				EB01D73C1D9D5D6D00274AEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB01D74A1D9D855900274AEA /* Player.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB01D74B1D9D855900274AEA /* Base */,
+			);
+			name = Player.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -119,6 +119,9 @@ extension ViewController{
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print()
+    }
 }
 
 extension ViewController:AVCaptureFileOutputRecordingDelegate{
@@ -151,6 +154,7 @@ extension ViewController:AVCaptureFileOutputRecordingDelegate{
             [weak strongSelf = self] in
             strongSelf?.recordButton.isEnabled = true
             strongSelf?.recordButton.setTitle("Record", for: [])
+            self.performSegue(withIdentifier: "recordtoplayer", sender: nil)
         }
 
     }

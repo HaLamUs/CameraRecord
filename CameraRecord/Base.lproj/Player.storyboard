@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u78-JD-RdA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="Ctb-ov-AgV">
+            <objects>
+                <viewController id="u78-JD-RdA" customClass="PlayerViewController" customModule="CameraRecord" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bs5-24-b2s"/>
+                        <viewControllerLayoutGuide type="bottom" id="CAc-6f-stR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WvV-j1-aWG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akL-R4-1n7">
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="touchUpCloseButton:" destination="u78-JD-RdA" eventType="touchUpInside" id="2yb-eT-yvG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-0J-MHc">
+                                <state key="normal" title="Play"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWN-l1-Xvr" customClass="PlayerView" customModule="CameraRecord" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ax7-0J-MHc" firstAttribute="centerX" secondItem="WvV-j1-aWG" secondAttribute="centerX" id="4MP-ff-2dw"/>
+                            <constraint firstItem="CAc-6f-stR" firstAttribute="top" secondItem="Ax7-0J-MHc" secondAttribute="bottom" constant="20" id="6mB-fp-Rqf"/>
+                            <constraint firstAttribute="trailing" secondItem="EWN-l1-Xvr" secondAttribute="trailing" id="9He-Te-2RB"/>
+                            <constraint firstItem="akL-R4-1n7" firstAttribute="top" secondItem="WvV-j1-aWG" secondAttribute="top" constant="30" id="TZQ-DP-oAq"/>
+                            <constraint firstItem="EWN-l1-Xvr" firstAttribute="leading" secondItem="WvV-j1-aWG" secondAttribute="leading" id="XPF-mW-Zpz"/>
+                            <constraint firstItem="EWN-l1-Xvr" firstAttribute="top" secondItem="akL-R4-1n7" secondAttribute="bottom" constant="10" id="c3X-XQ-Jil"/>
+                            <constraint firstItem="akL-R4-1n7" firstAttribute="leading" secondItem="WvV-j1-aWG" secondAttribute="leading" constant="20" id="rAB-W4-AXH"/>
+                            <constraint firstItem="Ax7-0J-MHc" firstAttribute="top" secondItem="EWN-l1-Xvr" secondAttribute="bottom" constant="10" id="tZg-py-0Dn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPz-wx-3ko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="37"/>
+        </scene>
+    </scenes>
+</document>

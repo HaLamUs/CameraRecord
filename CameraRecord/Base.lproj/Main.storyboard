@@ -44,11 +44,20 @@
                     <connections>
                         <outlet property="cameraView" destination="2we-WQ-RjC" id="aCD-K4-oGd"/>
                         <outlet property="recordButton" destination="lCT-27-87H" id="gfG-ak-d6Y"/>
+                        <segue destination="uC5-Nr-LzF" kind="show" identifier="recordtoplayer" id="eOs-YG-mLc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="qFd-Ty-c6d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Player" id="uC5-Nr-LzF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlQ-Pd-LTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="37"/>
         </scene>
     </scenes>
 </document>
