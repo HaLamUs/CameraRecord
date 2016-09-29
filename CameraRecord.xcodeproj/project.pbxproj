@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					EB01D72E1D9D5D6C00274AEA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XM9E7773FZ;
+						DevelopmentTeam = LR8XGHFLF8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,12 +261,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XM9E7773FZ;
+				DEVELOPMENT_TEAM = LR8XGHFLF8;
 				INFOPLIST_FILE = CameraRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = htk.dev.CameraRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,12 +276,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XM9E7773FZ;
+				DEVELOPMENT_TEAM = LR8XGHFLF8;
 				INFOPLIST_FILE = CameraRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = htk.dev.CameraRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
