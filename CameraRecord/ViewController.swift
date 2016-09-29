@@ -120,7 +120,8 @@ extension ViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print()
+        let playerViewController = segue.destination as! PlayerViewController
+        playerViewController.urlFile = sender as? URL
     }
 }
 
@@ -154,7 +155,7 @@ extension ViewController:AVCaptureFileOutputRecordingDelegate{
             [weak strongSelf = self] in
             strongSelf?.recordButton.isEnabled = true
             strongSelf?.recordButton.setTitle("Record", for: [])
-            self.performSegue(withIdentifier: "recordtoplayer", sender: nil)
+            self.performSegue(withIdentifier: "recordtoplayer", sender: outputFileURL)
         }
 
     }
