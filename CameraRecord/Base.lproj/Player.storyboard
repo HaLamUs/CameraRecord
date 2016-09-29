@@ -33,14 +33,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWN-l1-Xvr" customClass="PlayerView" customModule="CameraRecord" customModuleProvider="target">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhV-UZ-TOQ">
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="touchUpUpLoadButton:" destination="u78-JD-RdA" eventType="touchUpInside" id="TTN-Bc-yR8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ax7-0J-MHc" firstAttribute="centerX" secondItem="WvV-j1-aWG" secondAttribute="centerX" id="4MP-ff-2dw"/>
                             <constraint firstItem="CAc-6f-stR" firstAttribute="top" secondItem="Ax7-0J-MHc" secondAttribute="bottom" constant="20" id="6mB-fp-Rqf"/>
                             <constraint firstAttribute="trailing" secondItem="EWN-l1-Xvr" secondAttribute="trailing" id="9He-Te-2RB"/>
+                            <constraint firstItem="nhV-UZ-TOQ" firstAttribute="baseline" secondItem="akL-R4-1n7" secondAttribute="baseline" id="H8Q-91-iSI"/>
                             <constraint firstItem="akL-R4-1n7" firstAttribute="top" secondItem="WvV-j1-aWG" secondAttribute="top" constant="30" id="TZQ-DP-oAq"/>
                             <constraint firstItem="EWN-l1-Xvr" firstAttribute="leading" secondItem="WvV-j1-aWG" secondAttribute="leading" id="XPF-mW-Zpz"/>
+                            <constraint firstAttribute="trailing" secondItem="nhV-UZ-TOQ" secondAttribute="trailing" constant="20" id="YNV-K6-oxp"/>
                             <constraint firstItem="EWN-l1-Xvr" firstAttribute="top" secondItem="akL-R4-1n7" secondAttribute="bottom" constant="10" id="c3X-XQ-Jil"/>
                             <constraint firstItem="akL-R4-1n7" firstAttribute="leading" secondItem="WvV-j1-aWG" secondAttribute="leading" constant="20" id="rAB-W4-AXH"/>
                             <constraint firstItem="Ax7-0J-MHc" firstAttribute="top" secondItem="EWN-l1-Xvr" secondAttribute="bottom" constant="10" id="tZg-py-0Dn"/>
